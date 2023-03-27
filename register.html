@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Inscription</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>
-            <h1>Inscription</h1>
-            <form>
-                <div>
-                    <div>
-                        <label for="edit-nom">Nom</label>
-                        <input type="text" id="edit-nom" name="nom" placeholder="Nom">
-                    </div>
-                    <div>
-                        <label for="edit-prenom">Prénom</label>
-                        <input type="text" id="edit-prenom" name="prenom" placeholder="Prenom">
-                    </div>
-                    <div>
-                        <label for="edit-username">Pseudo</label>
-                        <input type="text" id="edit-username" name="Pseudo" placeholder="Pseudo">
-                    </div>
-                    <div>
-                        <label for="edit-mail">Adresse Mail</label>
-                        <input type="text" id="edit-mail" name="mail" placeholder="Adresse mail">
-                    </div>
-                    <div>
-                        <label for="edit-idbalise">Id balise</label>
-                        <input type="text" id="edit-idbalise" name="idBalise" placeholder="Id balise">
-                    </div>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <div id="inscription">
+        <h1>Inscription</h1>
+        <form>
+            <div id="coordonnees">
+                <div id="name">
+                    <label for="edit-nom">Nom</label>
+                    <input type="text" id="edit-nom" name="nom" placeholder="Nom">
                 </div>
-                <div>
-                    <div>
-                        <label>Password</label>
-                        <input type="password" name="mdp" placeholder="Password" minlength="8" required>
-                    </div>
-                    <div>
-                        <label>Confirm password</label>
-                        <input type="confirm-password" name="mdp2" placeholder="Password" minlength="8" required>
-                    </div>
+                <div id="firstname">
+                    <label for="edit-prenom">Prénom</label>
+                    <input type="text" id="edit-prenom" name="prenom" placeholder="Prenom">
                 </div>
-            </form>
-        </div>
-        Parcequ'il faut bien afficher quelque chose
-    </body>
+                <div id="mail">
+                    <label for="edit-mail">Adresse Mail</label>
+                    <input type="text" id="edit-mail" name="mail" placeholder="Adresse mail">
+                </div>
+            </div>
+            <div id="balisePseudo">
+                <div id="idBalise>
+                        <label for=" edit-idbalise">Id balise</label>
+                    <input type="text" id="edit-idbalise" name="idBalise" placeholder="Id balise">
+                </div>
+                <div id="pseudo">
+                    <label for="edit-username">Pseudo</label>
+                    <input type="text" id="edit-username" name="Pseudo" placeholder="Pseudo">
+                </div>
+
+            </div>
+            <div id="blockPassword">
+                <div id="password">
+                    <label>Password</label>
+                    <input type="password" name="mdp" placeholder="Password" minlength="8" required>
+                </div>
+                <div id="confirmPassword">
+                    <label>Confirm password</label>
+                    <input type="confirm-password" name="mdp2" placeholder="Password" minlength="8" required>
+                </div>
+
+            </div>
+            <div>
+                <br><input type="submit" value="Soumettre">
+            </div>
+        </form>
+    </div>
+    Parcequ'il faut bien afficher quelque chose
+</body>
+
 </html>

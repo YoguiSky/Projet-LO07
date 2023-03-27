@@ -1,0 +1,27 @@
+#connexion {
+    box-sizing: border-box;
+    display: block;
+    float: center;
+
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    width: 24em;
+    margin: auto;
+   
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    background-color: darkgray;
+}
+
+div {
+    text-align: center;
+}

@@ -1,0 +1,32 @@
+
+#inscription{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+
+    width : 50em;
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+#coordonnees{
+    float:left;
+
+}
+
+#balisePseudo{
+
+}
+
+#blockPassword{
+    float: right;
+
+}
+
+body{
+    background-color: darkgray;
+}
+
+div{
+    text-align: center;
+}
