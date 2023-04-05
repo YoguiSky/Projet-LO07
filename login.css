@@ -7,7 +7,12 @@
     border-style: solid;
     border-width: 1px;
     width: 24em;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    margin-bottom: 30%;
+    background-color: goldenrod;
+    border-radius: 15px;
    
 }
 
@@ -19,9 +24,24 @@
 
 
 body {
-    background-color: darkgray;
+    background-color: darkkhaki;
 }
 
 div {
     text-align: center;
+}
+
+#password{
+    margin: auto;
+    padding-top: 5px
+}
+
+#submit{
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#link-message{
+    margin: auto;
 }

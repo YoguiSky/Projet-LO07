@@ -9,17 +9,24 @@
     padding-bottom: 2em;
 }
 
+#flex-container{
+    display: flexbox;
+}
+
 #coordonnees{
-    float:left;
+   /* float:left;*/
+    display : flex;
 
 }
 
 #balisePseudo{
+    display: flex;
 
 }
 
 #blockPassword{
-    float: right;
+    /*float: right;*/
+    display: flex;
 
 }
 
