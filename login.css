@@ -1,18 +1,28 @@
-#connexion {
-    box-sizing: border-box;
-    display: block;
-    float: center;
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#connexion {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    margin: auto;
+    margin-top: 15%;    
+    box-sizing: border-box;
+    float: center;
     border-color: black;
     border-style: solid;
     border-width: 1px;
-    width: 24em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20%;
-    margin-bottom: 30%;
+    width: 30em;
+    height: auto;
     background-color: goldenrod;
     border-radius: 15px;
+    box-shadow: 5px;
+    align-content: center;
    
 }
 

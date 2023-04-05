@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script> src='undex.js' </script>
 
-    </head>
-    <body>
-        <header id="headerSite" style="display: block;">
-            <h1>MyMeteo</h1></header>
+<head>
+    <meta charset="UTF-8">
+    <script src='index.js'></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header id="headerSite" style="display: block;">
+        <h1>MyMeteo</h1>
+    </header>
+    <div id="contenupage">
         <div id="connexionLand">
-        <p><button class="connectBtn"><a href='login.html'>Connexion</a></button><br>
-        <!--Vous avez déjà un compte ?<a href='login.html'>Connexion</a><br>-->
-        Vous n'avez pas encore de compte ? Inscrivez-vous. <a href='register.html'>ici</a><br></p>
+            <h2>Connectez-vous !</h2>
+            <p><button onclick="connexionBouton()">Connexion</button></p>
+            <!--<p><button class="connectBtn"><a href='login.html'>Connexion</a></button><br>-->
+            <p>Vous n'avez pas encore de compte ? <br>
+                Inscrivez-vous. <a href='register.html'>ici</a><br></p>
         </div>
-        
-    </body>
+        <div id="presentation">
+            <h3>MyMeteo c'est quoi ?</h3>
+            <p>MyMeteo est un site qui permet de récuperer vos données grâce à une balise. <br>
+                Les données en question seront principalement des prise sde mesures de température.
+                Grâce à vos données récupérées, vous pourrez comparer celles-ci avec les données d'un autre endroit de
+                votre
+                choix, que ce soit un autre foyer, ou une autre pièce de votre maison ! <br>
+                Rejoignez MyMeteo en vous <a href="register.html">inscrivant ici</a> si ce n'est pas déjà fait!</p>
+        </div>
+    </div>
+
+</body>
+
 </html>
