@@ -22,6 +22,10 @@
     box-sizing: inherit;
 }
 
+a:link{
+    text-decoration: none;
+    color: black;
+}
 
 body {
     background-color: darkkhaki;

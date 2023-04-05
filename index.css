@@ -1,8 +1,23 @@
 
+header{
+    background-image: url("ciel.jpg");
+}
+
+h1{
+    display: block;
+    text-align: center;
+    font-size: large;
+    margin:auto;
+}
 
 #connexionLand{
     display: block;
-    float: left;
+    float: right;
     width:12em;
     margin : auto; 
+}
+
+.connectButton{
+    text-decoration: none;
+    color: black;
 }
