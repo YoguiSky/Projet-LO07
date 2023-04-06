@@ -23,7 +23,7 @@ h2{
 }
 
 h3{
-    text-align: left;
+    text-align: center;
     margin: 30px;
 }
 
@@ -47,6 +47,8 @@ a{
     padding-left: 15%;
     width: 35%;
     text-align: justify;
+    border-right: solid;
+    padding-right: 4em;
 }
 
 #connexionLand{
@@ -55,8 +57,9 @@ a{
     float: right;
     width:12em;
     margin: auto; 
-    margin-top: 17%;
+    margin-top: 10%;
     width: auto;
+
 }
 
 .connectButton{
