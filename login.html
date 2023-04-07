@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <title>Inscription</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="login.js"></script>
     <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
     <div id="connexion">
         <h1>Connexion</h1>
-        <form id="formulaireBlock">
+        <form id="formulaireBlock" method="POST" action="inscription.php">
             <div id="blockPseudoWord">
                 <div id="username">
                     <label for="edit-username"></label>
@@ -23,13 +22,12 @@
                 </div>
             </div>
             <div id="submit">
-                <input type="submit" value="Soumettre">
+                <input type="submit" value="Soumettre" name="connexion">
             </div>
             <div id="link_message">
                 Vous n'avez pas encore de compte ? Inscrivez-vous. <a href='register.html'>ici</a><br>
             </div>
         </form>
-
     </div>
     <div id="boutonAcceuil">
         <button onclick="retourAcceuil()">Acceuil</button>
