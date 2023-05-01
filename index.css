@@ -62,6 +62,15 @@ a{
 
 }
 
+#aboutUS{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: end;
+    /* J'arrive pas à foutre cette merde en type "about us" en fin de page*/
+    text-align: justify;
+    background-color: aqua;
+}
+
 .connectButton{
     text-decoration: none;
     color: black;

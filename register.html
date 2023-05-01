@@ -10,49 +10,47 @@
 </head>
 
 <body>
+    <header>
+        <h1>Inscrivez vous !</h1>
+    </header>
     <div id="inscription">
-        <h1>Inscription</h1>
+        <!--<h1>Inscription</h1>-->
         <form class="flex-container">
-            <div id="coordonnees">
+            <div id="NomPrenom">
                 <div id="name">
-                    <label for="edit-nom">Nom</label>
                     <input type="text" id="edit-nom" name="nom" placeholder="Nom">
                 </div>
                 <div id="firstname">
-                    <label for="edit-prenom">Prénom</label>
                     <input type="text" id="edit-prenom" name="prenom" placeholder="Prenom">
                 </div>
-                <div id="mail">
-                    <label for="edit-mail">Adresse Mail</label>
-                    <input type="text" id="edit-mail" name="mail" placeholder="Adresse mail">
-                </div>
             </div>
-            <div id="balisePseudo">
-                <div id="idBalise>
+
+            <!--<div id="idBalise">
                         <label for=" edit-idbalise">Id balise</label>
                     <input type="text" id="edit-idbalise" name="idBalise" placeholder="Id balise">
+                </div>-->
+            <div id="coordSite">
+                <div id="mail">
+                    <input type="text" id="edit-mail" name="mail" placeholder="Adresse mail">
                 </div>
                 <div id="pseudo">
-                    <label for="edit-username">Pseudo</label>
                     <input type="text" id="edit-username" name="Pseudo" placeholder="Pseudo">
                 </div>
-
             </div>
+
+
             <div id="blockPassword">
                 <div id="password">
-                    <label>Password</label>
                     <input type="password" name="mdp" placeholder="Password" minlength="8" required>
                 </div>
                 <div id="confirmPassword">
-                    <label>Confirm password</label>
-                    <input type="confirm-password" name="mdp2" placeholder="Password" minlength="8" required>
+                    <input type="confirm-password" name="mdp2" placeholder="Confirm password" minlength="8" required>
                 </div>
-
-            </div>
-            <div>
-                <br><input type="submit" value="Soumettre">
-            </div>
         </form>
+    </div>
+    <div id="validButton">
+        <br><input type="submit" value="Soumettre">
+    </div>
 
     </div>
     <div id="boutonAcceuil">

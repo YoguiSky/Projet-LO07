@@ -19,7 +19,7 @@ body{
     border-width: 1px;
     width: 30em;
     height: auto;
-    background-color: goldenrod;
+    background-color: purple;
     border-radius: 15px;
     box-shadow: 5px;
     align-content: center;
@@ -38,7 +38,7 @@ a:link{
 }
 
 body {
-    background-color: darkkhaki;
+    background-color: darkgray;
 }
 
 div {
@@ -58,4 +58,8 @@ div {
 
 #link-message{
     margin: auto;
+}
+
+#boutonAcceuil{
+    margin: 1em;
 }

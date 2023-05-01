@@ -1,33 +1,8 @@
 
-#inscription{
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-
-    width : 50em;
-    margin: auto;
-    padding-bottom: 2em;
-}
-
-#flex-container{
-    display: flexbox;
-}
-
-#coordonnees{
-   /* float:left;*/
-    display : flex;
-
-}
-
-#balisePseudo{
-    display: flex;
-
-}
-
-#blockPassword{
-    /*float: right;*/
-    display: flex;
-
+header{
+    text-align: center;
+    padding: 1em;
+    border: solid;
 }
 
 body{
@@ -37,4 +12,70 @@ body{
 
 div{
     text-align: center;
+}
+
+#inscription{
+    border-color: black;
+    /*border-style: solid;
+    border-width: 1px;*/
+
+    width : auto;
+    margin: auto;
+}
+
+.flex-container{
+
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    border:solid;
+    background-color: darkmagenta;
+    margin-top: 5em;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    
+}
+
+#NomPrenom{
+    order: 1;
+    flex-basis: 33%;
+    border-right: solid;
+    padding-top: 4em;
+    padding-bottom: 4em;
+
+}
+#coordSite{
+    order: 2;
+    flex-basis: 33%;
+    border-left: solid;
+    border-right: solid;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+#blockPassword{
+    order: 3;
+    flex-basis: 33%;
+    border-left: solid;
+    padding-top: 4em;
+    padding-bottom: 4em;
+
+}
+
+
+#name{
+    padding-bottom: 1em;
+}
+#mail{
+    padding-bottom: 1em;
+}
+
+#password{
+    padding-bottom: 1em;
+}
+
+
+#validButton{
+    padding-top: 2em;
+    padding-bottom: 1em;
 }
