@@ -49,6 +49,7 @@ a{
     text-align: justify;
     border-right: solid;
     padding-right: 4em;
+    height: fit-content;
 }
 
 #connexionLand{
