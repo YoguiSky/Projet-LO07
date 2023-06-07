@@ -13,6 +13,10 @@ header{
     border-width: 1px;
 }
 
+#bouton-acceuil{
+    position: right;
+}
+
 .filler-space{
     height: 10%;
     padding-top: 2%;
@@ -40,8 +44,21 @@ header{
     border-right: 1em;
 }
 
+.header-bdisplay{
+    background-color: darkgrey;
+    text-align: center;
+    padding-top: 0%;
+    position: relative;
+    
+}
+
+.inside-class-container{
+    display: flex;
+    order: 2;
+    flex-direction: column;
+}
+
 .affichage-graphs{
     order: 2;
     flex-basis: content;
-
 }

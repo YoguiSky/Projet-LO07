@@ -9,16 +9,27 @@
     <script src="indexln.js"></script>
 </head>
 
-<body onload="main()">
+<body >
     <header id="enGros">
-        <h1>Ici vous pouvez intéragir avec vos balises comme vous le souhaitez.</h1>
+        <h1>Ici vous pouvez interagir avec vos balises comme vous le souhaitez.</h1>
+        <p id="bouton-acceuil"><button onclick="retourAcceuil()">Déconnexion<!--<img src="house-solid.svg">--></button></p>
     </header>
-    <div class="filler-space"></div>
-    <div .class="flex-container">
-        <div class="beacons-display">Foutre <br>une <br>liste <br>horizontale <br>là.<br>et<br>en<br>dessous<br>
+    <div class="flex-container">
+        <div class="beacons-display">
+            <div class="header-bdisplay">
+                <p><h3>Vos balises :<br></h3></p>
+            </div>
+            <div class="beacons-list">
+                <ol></ol>
+                <button onclick="ajoutBalise()">Ajouter une balise</button>                
+            </div>
+            <p>Foutre une liste horizontale là et<br>en<br>dessous<br></p>
         </div>
-        <div class="affichage-graphs">
-
+        <div class="inside-class-container">
+            <div class="filler-space">
+                <p>Vous pouvez choisir quelles balises afficher, quelles données afficher, et vous pouvez superposer les données de différentes balises.<br></p>
+            </div>
+            <div class="affichage-graphs"></div>
         </div>
     </div>
 

@@ -10,6 +10,14 @@ d3.select('body')
 .append('p')
 .text('Paragraph');*/
 
+window.onload = () => {
+    main();
+}
+
+var retourAcceuil = function(){
+    window.location.href = 'index.html';
+}
+
 function main() {
     /*var svg = d3.select("body")
         .append("svg")
@@ -53,4 +61,10 @@ function main() {
         .attr('fill', 'white')
         .attr('text-anchor', 'middle');
 
+}
+
+var ajoutBalise = function(){
+    d3.select(".beacons-list").select("ol")
+    .append("li")
+    .text("Balise");
 }
