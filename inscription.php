@@ -8,11 +8,20 @@ $message = "";
 // La variable $message_erreur contiendra les éventuels messages d'erreur de l'application à afficher
 $message_erreur = "";
 
+//COnnexion à la base de données mymeteo
+
+require "connexion_bd.php";
+
 // Initialisation des variables contenant les données saisies dans le formulaire
 // et utilisées pour remplir le formulaire
-$pseudo = "";
-$mdp = "";
-
+if empty(message_erreur){
+$Pseudo = "";
+$Mdp = "";
+$Nom="";
+$Prenom="";
+$Mail="";
+$Mdp2 ="";
+}
 if (isset($_POST['connexion'])) {
   //***************************
   // Clic sur le bouton "S'inscrire" de valeur name="inscrire"
@@ -21,21 +30,21 @@ if (isset($_POST['connexion'])) {
   // Filtrage du contenu de $_POST et assignation à des variables locales
   // htmlspecialchars() : Convertit les caractères spéciaux en entités HTML
   // trim() : Supprime les espaces (ou d'autres caractères) en début et fin de chaîne
-  $pseudo = trim(htmlspecialchars($_POST['Pseudo']));
-  $mdp = trim(htmlspecialchars($_POST['mdp']));
+  $Pseudo = trim(htmlspecialchars($_POST['Pseudo']));
+  $Mdp = trim(htmlspecialchars($_POST['Mdp']));
   
   // Vérification de toutes les valeurs saisies
 
-  if (empty($pseudo)) {
+  if (empty($Pseudo)) {
     $message_erreur .= "Veuillez renseigner votre pseudo<br>\n";
-  } elseif (strlen($nom) > 100) {
-    $message_erreur .= "Le pseudo ne doit pas comporter plus de 100 caractères<br>\n";
-  } elseif (!preg_match('/^([[:alpha:]]|-|[[:space:]]|\')*$/u', $nom)) {
+  } elseif (strlen($Pseudo) > 50) {
+    $message_erreur .= "Le pseudo ne doit pas comporter plus de 50 caractères<br>\n";
+  } elseif (!preg_match('/^([[:alpha:]]|-|[[:space:]]|\')*$/u', $Pseudo)) {
     // [[:alpha:]] : caractères alphabétique
     // [[:space:]] : espace blanc
     $message_erreur .= "Le pseudo ne doit comporter que des lettres<br>\n";
   }
-  if (empty($mdp)) {
+  if (empty($Mdp)) {
     $message_erreur .= "Veuillez renseigner votre mot de passe<br>\n";
   }
 
@@ -45,10 +54,13 @@ if (isset($_POST['connexion'])) {
   if (empty($message_erreur)) {
     // Affiche un message de confirmation ainsi que les valeurs saisies
     $message .= "<p>Vous êtes bien connectés en tant que :";
-    $message .= pseudo;
+    $message .= Pseudo;
     
   }
 }
+
+//Deconnexion de la base de données mymeteo
+require "deconnexion_bd.php";
 ?>
 <!DOCTYPE html>
 <!-- **************************************** -->
