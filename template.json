@@ -1,0 +1,11 @@
+{
+	"IdBalise":"5",
+	"temperature":"25",
+	"humidite":"10"
+}
+
+
+insert user : INSERT INTO `utilisateur` (`IdUtilisateur`, `Nom`, `Prenom`, `Mail`, `Mdp`) VALUES ('1', 'Gallois', 'Louis', 'louis.gallois@utt.fr', 'mdptropsecu');
+insert balise : INSERT INTO `balise` (`IdUtilisateur`, `IdBalise`) VALUES ('1', '1');
+get data : SELECT * FROM `donnees` WHERE `IdBalise` = 1
+get balise of user : SELECT * FROM `balise` WHERE `IdUtilisateur` = 1

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Poster un paquet JSON</title>
+        <script src="http://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <form id="myForm" action="https://192.168.1.130/logvalues.php" method="post">
+            <textarea id="jsonData" name="jsonData" rows="5" cols="40">{
+    "IdBalise":"5",
+    "temperature":"25",
+    "humidite":"10"
+}</textarea>
+            <br>
+            <input type="submit" value="Envoyer">
+        </form>
+
+        <script>
+            $('#myForm').submit(function (event){
+                var myData = JSON.parse($('#jsonData').val());
+                console.log(myData);
+                $.ajax({
+                    type: "POST",
+                    url: "http://192.168.1.130/logvalues.php",
+                    data: JSON.stringify(myData),
+                    dataType: "json",
+                    success: function (data, status) {
+                        console.log('data send');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
+    
